@@ -29,7 +29,7 @@ library(ggplot2)
 nz <- fun_get_map(cntry = "NZ", kp = 0.03, min_area = 0.001)
 
 # plot the resulting map
-ggplot2::ggplot(nz) +
+ggplot(nz) +
   geom_sf()
 ```
 
