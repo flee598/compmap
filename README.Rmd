@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures",
+  out.width = "100%"
+)
+```
+
+# compmap
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of compmap is to download maps of countries from the xxx database and then use `rmapshaper` functions to compress the file size as desired. 
+
+
+## Installation
+
+``` {r eval = FALSE}
+devtools::install_github("flee598/compmap")
+```
+
+## Example
+Download a map of New Zealand and reduce the file size (this reduces the original map from ~24 Mb to ~500 kb).
+```{r eval = F}
+library(compmap)
+library(ggplot2)
+
+nz <- fun_get_map(cntry = "NZ", kp = 0.03, min_area = 0.001)
+
+# plot the resulting map
+ggplot2::ggplot(nz) +
+  geom_sf()
+```
+
+![](man/figures/nz_map.png)
+
+
