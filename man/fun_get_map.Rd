@@ -21,6 +21,9 @@ a SpatialPolygon
 \description{
 Import maps of countries from the \href{https://gadm.org}{gadm} database and compress to a chosen file size. File size is reduced by a) reducing the number of points in the polygon(s) and b) removing islands smaller than a chosen size.
 }
+\details{
+This function requires an interent connection to download the maps
+}
 \examples{
 \dontrun{
 nz_small <- fun_get_map(cntry = "NZ", kp = 0.03, min_area = 0.001)

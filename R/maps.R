@@ -7,6 +7,8 @@ library(rmapshaper)
 #'
 #'Import maps of countries from the \href{https://gadm.org}{gadm} database and compress to a chosen file size. File size is reduced by a) reducing the number of points in the polygon(s) and b) removing islands smaller than a chosen size.
 #'
+#' This function requires an interent connection to download the maps
+#'
 #' @param cntry iso country code, use raster::getData('ISO3') to see codes
 #' @param kp proportion of original points to keep
 #' @param min_area min area (km^2) of polygons to keep
