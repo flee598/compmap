@@ -6,9 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of compmap is to download maps of countries from the xxx
-database and then use `rmapshaper` functions to compress the file size
-as desired.
+The goal of compmap is to download maps of countries from the
+[gadm](https://gadm.org) package database (using the `raster` package)
+and then use `rmapshaper` functions to compress the file size as
+desired.
 
 ## Installation
 
