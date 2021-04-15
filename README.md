@@ -26,7 +26,7 @@ original map from \~24 Mb to \~500 kb).
 library(compmap)
 library(ggplot2)
 
-nz <- fun_get_map(cntry = "NZ", kp = 0.03, min_area = 0.001)
+nz <- fun_get_map(cntry = "NZ", kp = 0.03, min_area = 1000)
 
 # plot the resulting map
 ggplot(nz) +
